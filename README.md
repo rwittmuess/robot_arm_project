@@ -8,12 +8,15 @@ The application is fully containerized using Docker 🐳 for easy deployment and
 
 ## 🛠️ Features
 
-- Define and simulate a 6-axis robot arm
-- Input joint angles via ...
-- Smooth movement using linear interpolation
-- Live visualization of joint states in browser
-- Simple GUI for manual control
-- Dockerized frontend and backend for cross-platform execution
+- 6-Axis Robot Arm Simulation:
+    - Define and simulate a robot arm with 6 joints, each representing an axis of movement.
+- Smooth Movement:
+    - Implement smooth transitions between positions using simple linear interpolation.
+- Interactive Web GUI:
+    - Manual Control: Adjust joint angles via a user-friendly browser interface.
+    - Live Visualization: View real-time updates of the robot's joint states and movement.
+- Cross-Platform Execution:
+    - Both frontend and backend are containerized with Docker for easy deployment and portability.
 
 ## 📁 Project Structure
 1. **Robot Arm Setup**:
@@ -34,7 +37,7 @@ Backend and frontend are packaged using Docker and launched together via Docker 
 
 ## 🚀 Installation & Usage
 
-### 🧰 Prerequisites
+### Prerequisites
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) (make sure it's **running**)
 
@@ -55,8 +58,10 @@ docker compose up --build
 #### 3. Open Frontend 
 Open the control panel at ``http://localhost:8080``.
 
+#### 4. Have Fun
+Use the control panel to adjust the target joint angles. Then hit "Move Robot" and watch as each joint smoothly aligns with the new position.
 
-## Next Steps
+## Next Steps and Further ToDo's
 
-1. **Obstacle Avoidance**:
+- [ ] **Obstacle Avoidance**:
 Currently not implemented. Potential future enhancement could involve validating planned paths to prevent self-collisions or interactions with environmental obstacles.
