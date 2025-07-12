@@ -1,5 +1,5 @@
 from fastapi.testclient import TestClient
-from app.api import router  # Correctly importing the router object
+from app.api import router
 import numpy as np
 
 client = TestClient(router)

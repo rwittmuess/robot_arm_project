@@ -1,7 +1,3 @@
-/*****************************************************************
- * Rainbow sliders + joint dots + click‑lock while animating
- *****************************************************************/
-
 // joint colours
 const colours = ['red','orange','gold','green','dodgerblue','purple'];
 
