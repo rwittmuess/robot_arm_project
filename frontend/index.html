@@ -1,3 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>6‑Axis Robot Arm Control</title>
+  <style>
+    body {font-family:Arial,Helvetica,sans-serif;background:#f5f7fa;padding:24px;}
+    h1   {margin:0 0 20px;}
+    #sliders div {display:flex;align-items:center;margin-bottom:12px;gap:8px;}
+    label{width:80px;}
+    .limit {font-size:.8rem;color:#666;width:32px;text-align:center;}
+    input[type="range"]{flex:1;height:6px;border-radius:4px;outline:none;width:140px;}
+    canvas{margin-top:22px;border:1px solid #ccc;border-radius:6px;background:#fff;}
+    button{margin-bottom:20px;padding:6px 18px;border:none;border-radius:4px;
+           background:#4a90e2;color:#fff;font-weight:600;cursor:pointer;}
+    button:hover{background:#357ac9;}
+  </style>
+</head>
+
+<body>
+  <h1>Robot Arm Controller</h1>
+  
+
+  <div id="sliders"></div>
+  
+  <br>
+  <!-- <button onclick="sendAngles()">Move Robot</button> -->
+  <button id="moveBtn" onclick="sendAngles()">Move Robot</button>
+
+  <br>
+  <canvas id="robotCanvas" width="420" height="420"></canvas>
+
+  <script src="script.js"></script>
+</body>
 </html>
